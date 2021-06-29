@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.199);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+.github-container{
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+input[type="text"]{
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    display: block;
+    font-size: 1rem;
+    background-color: #fff;
+}
+input[type="text"]:focus{
+    outline: none;
+    background-color: #fff;
+}
+::placeholder{
+    font-size: 0.85rem;
+}
+.github-card{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 140px auto;
+    grid-column-gap: 15px;
+}
+.github-card img{
+    width: 120px;
+    border-radius: 100%;
+}
+.name{
+    font-size: 1.2rem;
+}
+.user-name{
+    font-size: small;
+    color: rgba(0, 0, 0, 0.534);
+    font-weight: 500;
+}
+.bio{
+    margin: 10px 0 10px 0;
+    font-size: 0.9rem;    
+}
+.github-content ul li{
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    font-size: 0.9rem;
+}
+.github-content .follower, .following, .reppo{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.github-content i{
+    font-size: 1.2rem;
+}
+.github-card-content{
+    width: 600px;
+    max-width: 100%;
+}
+footer {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.404);
+    font-weight: 500;
+}
+
+@media (max-width: 567px) {
+    .github-card{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+    
+    
+}
